@@ -80,7 +80,7 @@ class Collection(with_metaclass(CollectionMeta, object)):
     _fields = {}
     _connection = None
     _vars = None
-    _header_param_names = {'x_org_id': 'X-ORG-ID'}
+    _header_param_names = {'x_cloud_org_id': 'X-CLOUD-ORG-ID'}
     _local_fields_map = {}
     has_local_fields = False
 
