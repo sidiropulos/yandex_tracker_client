@@ -50,7 +50,6 @@ class Connection(object):
             self.session.headers.update(headers)
 
         self.session.headers['Authorization'] = 'OAuth ' + (token or 'not provided')
-        self.session.headers['X-Org-Id'] = org_id or 'not provided'
         self.session.headers['Content-Type'] = 'application/json'
 
         if cloud_org_id:
